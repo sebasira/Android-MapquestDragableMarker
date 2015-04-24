@@ -206,6 +206,7 @@ public class MapFragment extends Fragment {
                         inDrag = item;                                  // Item being dragged
                         items.remove(inDrag);                           // Remove this dragged item from item list
                         populate();                                     // Update ItemizedOverlay internal list
+                        map.postInvalidate();                           // Re-draw the map
 
                         // As the Touch Event may have happened around the point but not exactly
                         // on it we need to consider this little offset.
