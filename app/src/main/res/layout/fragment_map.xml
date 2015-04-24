@@ -16,4 +16,11 @@
 	    	This will make the map use Open Data data
 	    	android:apiKey=""
 	    	-->
+
+    <ImageView android:id="@+id/drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_marker"
+        android:visibility="gone"
+        />
 </RelativeLayout>

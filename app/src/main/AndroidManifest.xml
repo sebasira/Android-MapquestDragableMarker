@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sebasira.mapquestdragablemarker" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--  WRITE EXTERNAL STORAGE is to solve this error:
+        "Config list does not contain key: commercial-map"
+    segun:
+        http://developer.mapquest.com/web/products/forums/-/message_boards/message/449964
+-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
