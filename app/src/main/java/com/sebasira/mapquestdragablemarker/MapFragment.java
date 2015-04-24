@@ -31,10 +31,11 @@ public class MapFragment extends Fragment {
     // Mapquest Map View
     private MapView map;
 
-    // Default locations
+    // Default location
     private GeoPoint defaultPoint = new GeoPoint(-32.9476917, -60.6304694);
 
-    private ImageView dragImage=null;
+    // ImageView that would act as marker been dragged
+    private ImageView dragImage = null;
 
 /************************************************************************************/
 /** LIFE CYLCE **/
@@ -126,7 +127,7 @@ public class MapFragment extends Fragment {
         /* *********** */
         public DraggableOverlay(Drawable marker) {
             super(marker);
-            this.marker=marker;
+            this.marker = marker;
 
 
             xDragImageOffset = dragImage.getDrawable().getIntrinsicWidth()/2;
